@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <meta name="description" content="Hi! I`m Anastasia and this is my portfolio website with the example of my projects.">
+        <meta name="author" content="Anastasiia Movchan">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Portfolio Website - Anastasia M.</title>
+
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="icon" href="images/Favicon.png"> 
+
+        <meta property="og:title" content="Portfolio Website - Anastasia M.">
+        <meta property="og:image" content="https://dl.dropboxusercontent.com/scl/fi/8fqj1tqnxxjgd97nui6lb/Hero-Section-Group.png?rlkey=c9ad1ecckd6y8ycm53kvp9ic9&st=izs6pie9"> 
+
+        <!--Urbanist Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--/Urbanist-->
+
+        <!--Rokkit Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--/Rokkit-->
+
+        <!--Charm Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+        <!--/Charm-->
+
+        <!--Noto Color Emoji Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+        <!--/Noto Color Emoji Font-->
+
+    </head>
+
+    <body>
+        <header>
+            <div class="container nav">
+
+                <a href="index.html"><img src="images/LOGO.svg" alt="Logo" id="logo" class="logo" ></a>
+
+                <nav>
+                    <div class="hamburger-menu">
+                        <button class="hamburger-button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        
+                            <div class="mobile-links">
+                                <a href="#my-projects" class="mob-link">View my work</a>
+                                <a href="#comtacts" class="mob-link">Contacts</a>
+                                <button class="mob-email-btn" onclick="openEmail()">Send me an email</button>
+                            </div>
+                        </div>
+                    <div class="menu">
+                        <a href="#my-projects" class="nav-link">View my work</a>
+                        <a href="#contacts" class="nav-link">Contacts</a>
+                        <button class="email-btn" onclick="openEmail()">Send me an email</button>
+                    <div>
+                </nav>
+            </div><!--/container-->
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <p>Hi!</p>
+                <h1>I`m Anastasia</h1>
+                <div class="heading-hero">
+                    <div class="underline-hero animate"></div>
+                    <h3>Website Designer & Developer</h3>
+                </div>
+
+                <div class="button-container">
+                    <div class="button-shape"></div>
+                    <button id="hero-button">See my work</button>
+                </div>
+            </div><!--/container-->
+        </section><!--/hero-->
+
+        <div class="divider">
+            <div class="container"><p class="quote animate">"Design is the silent ambassador of your brand." — Paul Rand</p></div><!--/container-->
+        </div>
+
+        <section class="about-me">
+            <div class="container">
+               
+                <div class="about-group">
+                    <div class="underline">
+                        <div class="underline-dark animate"></div>
+                        <h2>Who Am I</h2>
+                    </div>
+                   
+                    <div class="about-point">
+                        <p>I`m a web designer and Webflow developer based in Istanbul, Türkiye.</p>
+                    </div>
+                    <div class="about-point">
+                       <p>Originally I`m Ukrainian and my global perspective enhances my work, allowing me to approach projects with diverse insights and creative solutions.</p>
+                    </div>
+                    <div class="about-point">
+                       <p>With 7 years of experience in the Aviation Industry, I've developed precision, efficiency, and attention to detail. These skills shape my design and development process, ensuring I create functional, visually appealing websites.</p>
+                    </div>
+                    <div class="about-point">
+                        <p>As a designer, I focus on creating solutions that meet user needs and business goals. My approach combines creativity with functionality, ensuring that every design is both beautiful and practical for users.</p>
+                    </div>
+                    <div class="about-point">
+                        <p>I`m fluent in English 🇬🇧, Ukrainian 🇺🇦, Russian, and have conversational Turkish 🇹🇷.</p>
+                    </div>
+                    
+                </div><!--/about-group-->
+                
+            </div><!--/container-->
+        </section><!--/about-me-->
+
+        <section class="my-skills dark">
+            <div class="container">
+                <div class="underline">
+                    <div class="underline-light animate"></div>
+                    <h2>My Skills</h2>
+                </div>
+
+                <div class="skills-container">
+                    <div class="skill">
+                        <h4>HTML</h4>
+                        <div class="skill-line">
+                            <div class="progress-bar html animate">85%</div>
+                        </div>
+                        <p>Strong proficiency in HTML5. I use semantic HTML to ensure accessibility and SEO optimization for all my websites.</p>
+                    </div>
+                    <div class="skill">
+                        <h4>CSS</h4>
+                        <div class="skill-line">
+                            <div class="progress-bar css animate">85%</div>
+                        </div>
+                        <p>Experienced in CSS3, including Flexbox, Grid, and animations. I ensure my designs are responsive and look great across all devices.</p>
+                    </div>
+                    <div class="skill">
+                        <h4>JavaScript</h4>
+                        <div class="skill-line">
+                            <div class="progress-bar javascript animate">88%</div>
+                        </div>
+                        <p>I can build interactive elements and dynamic content using JavaScript.</p>
+                    </div>
+                    <div class="skill">
+                        <h4>Figma</h4>
+                        <div class="skill-line">
+                            <div class="progress-bar figma animate">90%</div>
+                        </div>
+                        <p>Proficient in Figma to create wireframes, prototypes, and UI designs.</p>
+                    </div>
+                    <div class="skill">
+                        <h4>Webflow</h4>
+                        <div class="skill-line">
+                            <div class="progress-bar webflow animate">85%</div>
+                        </div>
+                        <p>I’m skilled in using Webflow to build responsive websites with a visual interface, without sacrificing code quality or flexibility.</p>
+                    </div>
+                </div>
+            </div><!--/container-->
+        </section><!--/my-skills-->
+
+        <section class="what-i-do">
+            <div class="container">
+                <div class="underline">
+                    <div class="underline-dark animate"></div>
+                    <h2>What I Do</h2>
+                </div>
+
+                <div class="do-group">
+                    <div class="col">
+                        <h3>Design</h3>
+                        <p>I create beautiful, user-centered web designs that focus on clean aesthetics and intuitive navigation. I work in Figma to develop wireframes and prototypes that align with your brand vision and ensure a seamless user experience.</p>
+                    </div>
+                    <div class="col">
+                        <h3>Website Development</h3>
+                        <p>As well as building custom-coded websites, I also develop websites using Webflow, allowing me to design responsive, powerful, and fully customized sites. Additionally, Webflow features an intuitive Content Editor, making it easy for you and your team to update website content swiftly and effortlessly. <a href="https://webflow.com/platform" target="_blank" rel="noreferrer noopener">Read more about Webflow.</a></p>
+                    </div>
+                </div>
+            </div><!--/container-->
+        </section><!--/what-i-do-->
+
+        <div class="divider">
+            <div class="container"><p class="quote animate">"Good design is good business." - Thomas Watson Jr.</p></div><!--/container-->
+        </div>
+
+        <section class="my-projects dark" id="my-projects">
+            <div class="container">
+                <div class="underline">
+                    <div class="underline-light animate"></div>
+                    <h2>My Projects</h2>
+                </div>
+
+                <div class="project">
+                    <div class="left-col">
+                        <p class="latest-work">LATEST WORK</p>
+                        <h4>Team App website</h4>
+                        <div class="tags">
+                            <p class="tag">Web Design</p>
+                            <p class="tag">Webflow Development</p>
+                            <p class="tag">Concept</p>
+                        </div>
+                        <p class="explanation">Complete website design and development for a team collaboration platform concept, featuring an elegant blog. Both the website and blog were created in Webflow, known for its excellent CMS for blog hosting.</p>
+                        <div class="button-container-project">
+                            <div class="button-shape-project"></div>
+                            <button id="team-project-button">See this project</button>
+                        </div>
+                    </div>
+                    <div class="right-col">
+                        <img src="images/Circles.svg" alt="Circles" class="circles">
+                        <div class="zoom"><a href="teamproject.html" target="_blank" rel="noreferrer noopener"><img src="images/Team.png" alt="Team project photo" class="main"></a></div>
+
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="left-col">
+                        <p class="latest-work">LATEST WORK</p>
+                        <h4>Concept Shoe Store Website</h4>
+                        <div class="tags">
+                            <p class="tag">Web Design</p>
+                            <p class="tag">Landing Page</p>
+                            <p class="tag">Concept</p>
+                        </div>
+                        <p class="explanation">Concept landing page for a modern shoe store, focusing on a sleek, elegant design and user-friendly navigation. The project highlights my skills in combining aesthetics with functionality for an engaging shopping experience.</p>
+                        <div class="button-container-project">
+                            <div class="button-shape-project"></div>
+                            <button id="shoe-store-button">See this project</button>
+                        </div>
+                    </div>
+                    <div class="right-col">
+                        <img src="images/Circles.svg" alt="Circles" class="circles">
+                        <div class="zoom"><a href="shoestore.html" target="_blank" rel="noreferrer noopener"><img src="images/shoes.png" alt="Shoes Store project photo" class="main"></a></div>
+
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="left-col">
+                        <p class="latest-work">LATEST WORK</p>
+                        <h4>Shopping List Project</h4>
+                        <div class="tags">
+                            <p class="tag">JavaScript</p>
+                            <p class="tag">VS Code</p>
+                        </div>
+                        <p class="explanation">One-page shopping list app using hand-written JavaScript code, showcasing my ability to bring page functionality to life with interactive features and smooth user experience.</p>
+                        <div class="button-container-project">
+                            <div class="button-shape-project"></div>
+                            <button id="shopping-list-button">See this project</button>
+                        </div>
+                    </div>
+                    <div class="right-col">
+                        <img src="images/Circles.svg" alt="Circles" class="circles">
+                        <div class="zoom"><a href="shoppinglist.html" target="_blank" rel="noreferrer noopener"><img src="images/shopping-list.png" alt="Shopping List project photo" class="main"></a></div>
+
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="left-col">
+                        <p class="latest-work">LATEST WORK</p>
+                        <h4>Chat App website</h4>
+                        <div class="tags">
+                            <p class="tag">Web Design</p>
+                            <p class="tag">Landing Page</p>
+                            <p class="tag">Concept</p>
+                        </div>
+                        <p class="explanation">This is a homepage design for a concept project—a chat application. </p>
+                        <div class="button-container-project">
+                            <div class="button-shape-project"></div>
+                            <button id="chat-app-button">See this project</button>
+                        </div>
+                    </div>
+                    <div class="right-col">
+                        <img src="images/Circles.svg" alt="Circles" class="circles">
+                        <div class="zoom"><a href="chatapp.html" target="_blank" rel="noreferrer noopener"><img src="images/chat-app.png" alt="Chat app project photo" class="main"></a></div>
+
+                    </div>
+                </div>
+                
+            </div><!--/container-->
+        </section><!--/my-projects-->
+
+        <section class="want-to-work" id="contacts">
+            <div class="container last-container">
+                <div class="last">
+                        <div class="underline">
+                            <div class="underline-dark animate"></div>
+                            <h2>Want to work?</h2>
+                        </div>
+    
+                        <p>If you’re looking for a contemporary and dynamic website for your business, startup, or personal project, I’m here to help. Feel free to reach out to me directly at <button class="email" onclick="openEmail()">ana.designs360@gmail.com</button>.</p>
+                </div>
+                
+            </div><!--/container-->
+        </section><!--/want-to-work-->
+
+        <div class="round-btn">
+            <button id="round-btn"><img src="images/arrow-btn.svg" alt="arrow" class="arrow"></button>
+        </div>
+
+
+        <footer>
+            <div class="container">
+                <div class="footer-flex">
+                    <!-- <a href=""><img src="images/LOGO-white.svg"></a> -->
+                    <p>@ All rights reserved - Anastasiia Movchan</p>
+                    <div class="logos">
+                        <a href="https://github.com/anastasiagungor" target="_blank" rel="noreferrer noopener" class="social-logo"><img src="images/github.svg" alt="Github logo"></a>
+                        <a href="https://www.linkedin.com/in/anastasiia-movchan-a21a78235/" target="_blank" rel="noreferrer noopener" class="social-logo" ><img src="images/linkedin.svg" alt="LinkedIn Logo"></a>
+                    </div>
+                </div>
+            </div><!--/container-->
+        </footer>
+        
+
+
+        <script defer src="JS/script.js"></script>        
+    </body>
+</html>

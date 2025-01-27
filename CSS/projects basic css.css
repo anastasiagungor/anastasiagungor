@@ -1,0 +1,363 @@
+:root {
+    --bej-bg: #d6d5cc;
+    --light-bej: #efefe7;
+    --divider_and_heading: #352B38;
+    --dark_underline: #D0CECB;
+    --light_underline: #FFFFF9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Urbanist", Arial, Helvetica, sans-serif, "Noto Color Emoji";
+    font-size: 17px;
+    font-weight: 400;
+    box-sizing: border-box;
+    background-color: #FFF;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 15px 30px;
+}
+
+@media screen and (max-width:990px) {
+    .container {
+        padding:10px 20px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .container {
+        padding:7px 10px;
+    }
+}
+
+.dark {
+    background: linear-gradient(135deg, #d6d5cc, #e0dcd2);
+}
+
+/*Nav-menu*/
+/*HAMBURGER*/
+.hamburger-menu {
+    display: none;
+    overflow: hidden;
+}
+.mobile-links-container {
+    display: none;
+}
+
+.hamburger-button {
+    border: none;
+    background-color: rgba(0,0,0,0);
+    height: 40px;
+    width: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburger-button span {
+    height: 4px;
+    width: 100%;
+    background-color: #777168;
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-in-out;
+}
+
+.hamburger-button span:nth-child(1) {
+    top: 25%;
+}
+
+.hamburger-button span:nth-child(3) {
+    top: 75%;
+}
+
+/*Hamburger button active class*/
+.hamburger-button.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburger-button.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-button.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/*-------*/
+
+.mobile-links {
+    background-color: rgba(255,255,255,0.6);
+    color: black;
+    height: auto;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0 0 0 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.3s ease-out;
+    
+}
+
+.mobile-links.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mob-link {
+    display: block;
+    color: black;
+    padding: 10px;
+    margin-left: 10%;
+    font-size: 14px;
+    transition: all 300ms ease-in-out;
+}
+
+.mob-email-btn {
+    display: block;
+    color: black;
+    font-size: 14px;
+    font-family: "Urbanist", sans-serif;
+    background-color: var(--light-bej);
+    padding: 10px;
+    border: 0.5px solid rgba(101, 94 , 84, 0.1);
+    border-radius: 7px;
+    box-shadow: 3px 3px 11px -2px rgb(102, 95, 85, 0.1);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    transition: all 600ms ease-in-out;
+}
+
+.mob-link:hover {
+    box-shadow: 0 2px rgb(131, 107, 72, 0.5);
+}
+
+.mob-email-btn:hover {
+    background-color: rgba(239,239,231,0.4);
+    box-shadow: 3px 3px 11px -2px rgba(63, 59, 54, 0.8);
+}
+
+/*REGULAR NAV*/
+.nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a.logo {
+    display: inline-block;
+    height: auto;
+    padding: 0;
+}
+.logo {
+    width: 80%;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-link {
+    color: black;
+    font-size: 16px;
+    margin: 0 15px;
+    padding: 5px;
+    transition: all 600ms;
+}
+
+.email-btn {
+    color: black;
+    font-size: 16px;
+    font-family: "Urbanist", sans-serif;
+    background-color: var(--light-bej);
+    padding: 13px 13px;
+    border: 1px solid rgba(101, 94 , 84, 0.3);
+    border-radius: 7px;
+    box-shadow: 3px 3px 11px -2px rgb(102, 95, 85, 0.4);
+    margin-left: 20px;
+    transition: all 600ms ease-in-out;
+}
+
+@media screen and (max-width:990px) {
+    .nav-link {
+        font-size: 15px;
+        padding: 3px;
+    }
+
+    .email-btn {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav-link {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .menu {
+        display:none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .logo {
+        width:85%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .nav {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .logo {
+        width:70%;
+    }
+
+    .mobile-links {
+        top: 78px;
+    }
+
+    .hamburger-button {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+/*NAV HOVER*/
+.nav-link:hover {
+    box-shadow: 0 2px rgb(131, 107, 72, 0.5);
+}
+
+.email-btn:hover {
+    background-color: rgba(239,239,231,0.4);
+    box-shadow: 3px 3px 11px -2px rgba(63, 59, 54, 0.8);
+    transform: translate(2px,-2px);
+}
+
+/*Round button*/
+#round-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    opacity: 0.3;
+    display: none;
+    z-index: 99;
+    transition: all ease-out 300ms;
+}
+
+#round-btn:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width:768px) {
+    #round-btn {
+        width: 35px;
+        height: 35px;
+        bottom: 20px;
+        right: 20px;
+        opacity: 0.2;
+    }
+
+    .arrow {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    #round-btn {
+        width: 30px;
+        height: 30px;
+        border: 1.5px solid;
+    }
+}
+
+
+/*FOOTER*/
+footer {
+    height: 70px;
+    background-color: var(--divider_and_heading);
+    text-align: center;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.footer-flex p {
+    flex-grow: 1; 
+    text-align: center; 
+}
+
+.logos {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width:990px) {
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    footer {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    footer {
+        font-size: 10px;
+    }
+}
+/*Animation class*/
+.animated {
+    animation-play-state: running;
+}
