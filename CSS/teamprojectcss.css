@@ -123,6 +123,7 @@ video.controls {
     p {
         padding: 0 20px 15px 20px;
         font-size: 15px;
+        max-width: 100%;
     }
     
     .link {
