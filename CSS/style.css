@@ -122,7 +122,7 @@ button {
     color: black;
     padding: 10px;
     margin-left: 10%;
-    font-size: 14px;
+    font-size: 15px;
     transition: all 300ms ease-in-out;
 }
 
@@ -225,22 +225,22 @@ a.logo {
     }
 
     .logo {
-        width:85%;
+        width:75%;
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 431px) {
     .nav {
         padding-top: 7px;
         padding-bottom: 7px;
     }
 
     .logo {
-        width:70%;
+        width:73%;
     }
 
     .mobile-links {
-        top: 78px;
+        top: 74px;
     }
 
     .hamburger-button {
@@ -308,6 +308,7 @@ h1 {
     left: 15px;
     max-width: 97%;
     height: 80%;
+    border-radius: 3px;
     background-color: #666159;
     animation: grow 2s ease-out forwards;
     animation-play-state: paused;
@@ -328,6 +329,7 @@ h1 {
     font-family: "Urbanist", sans-serif;
     font-size: 19px;
     padding: 14px 41px;
+    color: black;
     border: none;
     border-radius: 7px;
     box-shadow: -2px -2px 6px rgba(211,211,211,0.9), 3px 3px 12px -2px rgba(11,11,11,0.8);
@@ -343,6 +345,10 @@ h1 {
     left: 7px;
     border-radius: 7px;
     box-shadow: 1px 1px 8px -1px rgba(0,0,0,0.3);
+}
+
+.small-1, .small-2 {
+    display: none;
 }
 
 @media screen and (max-width:990px) {
@@ -398,31 +404,67 @@ h1 {
     }
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:431px) {
+    .hero {
+        height: 600px;
+    }
+    
     .hero p {
-        font-size: 14px;
-        margin-top: 70px;
+        margin-top: 130px;
         margin-bottom: 7px;
     }
     
     h1 {
-        font-size: 35px;
-        margin-bottom:12px;
+        margin-bottom:15px;
     }
 
-    .heading-hero h3 {
-        font-size: 25px;
-        margin-bottom: 30px;
+    .heading-hero {
+        display: none;
+    }
+
+    .small-1, .small-2 {
+        display: block;
+        position: relative;
+        max-width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .small-1 h3,
+    .small-2 h3 {
+        font-family: "Rokkitt", Arial, Helvetica, sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #F9FEFF;
+        position: relative;
+    }
+    
+    .small-2 h3 {
+        margin-bottom: 20px;
+    }
+
+    .underline-small-1,
+    .underline-small-2 {
+        position: absolute;
+        bottom: 5px;
+        left: 7px;
+        max-width: 97%;
+        height: 50%;
+        border-radius: 3px;
+        background-color: rgba(102, 97, 89, 0.8);
+        animation: grow 2s ease-out forwards;
+        animation-play-state: paused;
     }
 
     .button-container button {
-        font-size: 14px;
+        font-size: 15px;
         padding: 12px 25px;
     }
 
     .button-shape {
-        height: 40px;
-        width: 130px;
+        height: 42px;
+        width: 136px;
     }
 }
 
@@ -466,12 +508,12 @@ h1 {
     }
 }
 
-@media screen and (max-width:426px) {
+/* @media screen and (max-width:431px) {
     .divider {
         font-size: 11px;
         height: 36px;
     }
-}
+} */
 
 
 /*H2 and UNDERLINE */
@@ -501,6 +543,7 @@ h2 {
     left: 10px;
     max-width:93%;
     height: 80%;
+    border-radius: 3px;
     background-color: var(--dark_underline);
     animation: grow 2s ease-out forwards;
     animation-play-state: paused;
@@ -513,6 +556,7 @@ h2 {
     left: 10px;
     max-width:93%;
     height: 80%;
+    border-radius: 3px;
     background-color: var(--light_underline);
     animation: grow 2s ease-out forwards;
     animation-play-state: paused;
@@ -607,27 +651,24 @@ h2 {
     }
 }
 
-@media screen and (max-width:426px) {
-    .about-me {
-        padding-bottom: 15px;
-    }
-    
+@media screen and (max-width:431px) {
+
     .about-group {
-        margin-top: 10px;
+        margin-top: 30px;
         padding:10px 10px 10px 10px;
     }
     
     .about-point {
-        font-size:14px;
+        font-size:15px;
         line-height: 24px;
-        padding: 7px 7px 7px 40px;
+        text-align: justify;
     }
 
     .about-point:before {
         left: 10px;
         width: 20px;
         height: 20px;
-    }
+    } 
 }
 
 /*Skills Section*/
@@ -746,11 +787,11 @@ h2 {
     }
     
     .skill p {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 15px;
+        line-height: 22px;
     }
 }
-@media screen and (max-width:426px) {
+@media screen and (max-width:431px) {
     .my-skills {
         padding-bottom: 20px;
     }
@@ -771,9 +812,8 @@ h2 {
     }
     
     .skill h4 {
-        font-size: 15px;
-    }
-    
+        font-size: 17px;
+    }   
 }
 
 /*What I Do Section */
@@ -853,17 +893,18 @@ color: #948600;
     }
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:431px) {
     .what-i-do {
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 
     .do-group {
         display: flex;
         column-gap: 0;
-        row-gap: 15px;
+        row-gap: 20px;
         flex-wrap: wrap;
-        padding: 0 12px 10px 12px;
+        padding: 10px 12px 10px 12px;
+        margin-bottom: 20px;
     }
         
     .col {
@@ -878,8 +919,8 @@ color: #948600;
     }
 
     .col p {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 15px;
+        line-height: 22px;
     }
 }
 
@@ -968,6 +1009,7 @@ color: #948600;
     font-family: "Urbanist", sans-serif;
     font-size: 18px;
     padding: 14px 30px;
+    color: black;
     border: none;
     border-radius: 7px;
     box-shadow: -2px -2px 6px rgba(211,211,211,0.9), 3px 3px 12px -2px rgba(11,11,11,0.8);
@@ -1001,7 +1043,8 @@ color: #948600;
     .tags {
         gap: 7px;
     }
-    .tag {
+    .tag,
+    .tag-black {
         font-size: 12px;
     }
     
@@ -1034,7 +1077,8 @@ color: #948600;
     .left-col h4 {
         font-size: 24px;
     }
-    .tag {
+    .tag,
+    .tag-black {
         font-size: 11px;
         padding: 5px 10px;
     }
@@ -1071,12 +1115,13 @@ color: #948600;
         font-size: 22px;
     }
 
-    .tag {
-        font-size: 10px;
+    .tag,
+    .tag-black {
+        font-size: 12px;
     }
     
     .explanation {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 22px;
     }
     
@@ -1092,14 +1137,14 @@ color: #948600;
 
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:431px) {
     .my-projects {
-        padding-bottom: 10px;
+        padding-bottom: 0;
     }
     
     .project {
         gap: 20px;
-        padding: 20px 10px 30px 10px;
+        padding: 20px 10px 80px 10px;
     }
 
     .left-col {
@@ -1107,17 +1152,16 @@ color: #948600;
     }
     
     .latest-work {
-        font-size: 11px;
         letter-spacing: 3px;
     }
 
     .left-col h4 {
-        font-size: 20px;
+        font-size: 22px;
         padding-bottom: 12px;
     }
     
     .explanation {
-        line-height: 20px;
+        line-height: 24px;
         padding-top: 15px;
         padding-bottom: 20px;
     }
@@ -1199,29 +1243,28 @@ color: #948600;
     }
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:431px) {
     .right-col {
         flex: auto;
     }
     
     .main {
-        max-width:95%;
+        max-width:100%;
         margin-left: auto;
         margin-right: auto;
     }
     
     .circles {
-        top: 95px;
-        left: 0px;
+        display: none;
     }
 }
 
-@media screen and (max-width:376px) {
+/* @media screen and (max-width:376px) {
     .circles {
         top: 86px;
         left: 0px;
     }
-}
+} */
 
 /*WANT TO WORK SECTION*/
 .want-to-work {
@@ -1296,6 +1339,7 @@ color: #948600;
     height: 40px;
     border: 2px solid;
     background-color: rgba(0,0,0,0);
+    color: black;
     cursor: pointer;
     position: fixed;
     bottom: 40px;
@@ -1318,12 +1362,8 @@ color: #948600;
 }
 
 @media screen and (max-width:768px) {
-    .want-to-work {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    
-    .want-to-work p {
+    .want-to-work p,
+    .email {
         font-size: 16px;
         line-height: 30px;
     }
@@ -1346,7 +1386,8 @@ color: #948600;
 }
 
 @media screen and (max-width:576px) {
-    .want-to-work p {
+    .want-to-work p,
+    .email {
         font-size: 15px;
         line-height: 25px;
     }
@@ -1356,19 +1397,15 @@ color: #948600;
     }
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:431px) {
     .last-container {
         padding-left: 15px;
         padding-right: 15px;    
     }
     
-    .want-to-work p {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .last {
-        padding: 15px 15px 50px 15px;
+    .want-to-work p,
+    .email {
+        line-height: 22px;
     }
 
     #round-btn {
@@ -1389,18 +1426,19 @@ footer {
 
 .footer-flex {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
+    padding-top: 10px;
 }
 
 .footer-flex p {
-    flex: 2;
+    flex-grow: 1; 
+    text-align: center; 
 }
 
-.social-logo {
-    flex: 1;
-    padding-right: 5px;
-    padding-left: 5px;
+.logos {
+    display: flex;
+    gap: 10px;
 }
 
 @media screen and (max-width:990px) {
@@ -1409,23 +1447,7 @@ footer {
     }
 }
 
-@media screen and (max-width:768px) {
-    footer {
-        height: 50px;
-    }
-}
 
-@media screen and (max-width:576px) {
-    footer {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width:426px) {
-    footer {
-        font-size: 10px;
-    }
-}
 
 /*Animation class*/
 .animated {

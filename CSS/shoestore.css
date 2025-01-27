@@ -36,3 +36,18 @@ p.mono {
     margin: 20px 0;
     width: 80%;
 }
+
+@media screen and (max-width: 431px) {
+    h1 {
+        font-size: 2.3rem;
+        margin-top: 10px;
+    }
+    
+    .shoe-image {
+        margin-top: 10px;
+    }
+
+    .design {
+        width: 100%;
+    }
+}

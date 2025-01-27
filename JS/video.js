@@ -28,3 +28,16 @@ progressBar.addEventListener('click', (event) => {
 window.addEventListener('load', () => {
     video.play();
 });
+
+// Function to toggle controls visibility based on screen size
+function toggleControls() {
+    if (window.innerWidth <= 768) {
+        video.setAttribute('controls', 'controls');
+    } else {
+        video.removeAttribute('controls');
+    }
+}
+
+// Run on load and on resize
+toggleControls();
+window.addEventListener('resize', toggleControls);
