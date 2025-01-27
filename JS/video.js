@@ -40,4 +40,4 @@ function toggleControls() {
 
 // Run on load and on resize
 toggleControls();
-window.addEventListener('resize', toggleControls);
+window.addEventListener('resize', toggleControls); 
