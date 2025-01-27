@@ -1,14 +1,8 @@
 ## Hi there ✨
-Hi, I’m Anastasia, a web designer and Webflow developer based in Istanbul, Türkiye 🇹🇷. 
-Originally from Ukraine 🇺🇦, my global perspective 🌍 enhances my work, allowing me to approach projects with diverse insights and creative solutions.
+Hi, I’m Anastasia, a Web Designer and Webflow developer based in Istanbul, Türkiye.
+Originally from Ukraine, my global perspective 🌍 enhances my work, allowing me to approach projects with diverse insights and creative solutions.
 
 With 7 years of experience in the Aviation Industry ✈️, I’ve developed skills in precision, efficiency, and attention to detail, which shape my approach to web design and development.
-
-I’m fluent in:
-- English 🇬🇧
-- Ukrainian 🇺🇦
-- Russian
-- Conversational Turkish 🇹🇷 
 
 ## My Skills 🛠️
 - **Web Design**: User-centered design, responsive design, Figma, wireframing.
